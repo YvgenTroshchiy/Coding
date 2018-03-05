@@ -1,4 +1,4 @@
-package kotlin
+package kotlinTest
 
 private var array = intArrayOf(1, 2, 3, 4, 5, 10)
 
