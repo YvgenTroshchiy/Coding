@@ -1,4 +1,4 @@
-package kotlinTest.test
+package kotlin.test
 
 open class A
 

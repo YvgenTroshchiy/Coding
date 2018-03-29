@@ -19,8 +19,10 @@ fun main(args: Array<String>) {
     val n = scanner.nextInt()
     offset = scanner.nextInt()
 
+    // Check input ranges
     if (n !in 1..Math.pow(10.toDouble(), 5.toDouble()).toInt() || offset !in 1..n) return
 
+    // Receive values
     val a = IntArray(n)
     for (i in 0 until n)
         a[i] = scanner.nextInt()

@@ -1,4 +1,4 @@
-package kotlinTest
+package kotlin
 
 class LazyProperty(private val initializer: () -> Int) {
     private var value: Int? = null

@@ -1,16 +1,18 @@
-package javaCore
+package javacore
 
 
 class Counts {
     private val counts = HashMap<String, Int>()
 
-    fun incrementOf(key: String) {
+    fun increment(key: String) {
         print("before : ${counts[key]}\n")
 
         counts[key] = counts[key]?.plus(1) ?: 1
 
         print("after  : ${counts[key]}\n\n")
     }
+
+    fun getValue(key: String): Int = counts[key] ?: 0
 
     fun getValueAndReset(key: String): Int {
         print("before : ${counts[key]}\n")
@@ -29,10 +31,10 @@ fun main(args: Array<String>) {
 
     val counts = Counts()
 
-    counts.incrementOf(a)
-    counts.incrementOf(a)
+    counts.increment(a)
+    counts.increment(a)
 
-    print(counts.getValueAndReset(a))
+    print("${counts.getValueAndReset(a)}\n\n")
 
-
+    counts.increment(a)
 }

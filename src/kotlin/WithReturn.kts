@@ -1,4 +1,4 @@
-package kotlinTest
+package kotlin
 
 val i = 3
 

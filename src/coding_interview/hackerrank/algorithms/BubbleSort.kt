@@ -6,7 +6,7 @@ fun main(args: Array<String>) {
 
     /*
     for (i in 0 until n) {
-        // Track number of elements swapped during a single codinginterview.array traversal
+        // Track number of elements swapped during a single coding_interview.array traversal
         var numberOfSwaps = 0
 
         for (j in 0 until n - 1) {
@@ -17,7 +17,7 @@ fun main(args: Array<String>) {
             }
         }
 
-        // If no elements were swapped during a traversal, codinginterview.array is sorted
+        // If no elements were swapped during a traversal, coding_interview.array is sorted
         if (numberOfSwaps == 0) {
             break
         }

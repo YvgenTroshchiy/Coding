@@ -1,4 +1,4 @@
-package codinginterview
+package coding_interview
 
 private var array = intArrayOf(-2, 1, -3, 4, -1, 2, 1, -5, 4)
 

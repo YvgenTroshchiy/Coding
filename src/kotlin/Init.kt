@@ -1,4 +1,4 @@
-package kotlinTest
+package kotlin
 
 fun main(args: Array<String>) {
 
