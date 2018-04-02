@@ -1,4 +1,4 @@
-package codinginterview.hackerrank.dataStructures
+package coding_interview.hackerrank.data_structures
 
 import java.lang.IllegalArgumentException
 import java.util.*

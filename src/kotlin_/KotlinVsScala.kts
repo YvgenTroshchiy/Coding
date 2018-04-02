@@ -10,13 +10,12 @@ fun main3() {
     println("Hello3")
 }
 
+main1()
 println()
 
-
-main1()
-
-main2()
+main2() // Doesn't print
 main2()()
 main2().invoke()
+println()
 
 main3()

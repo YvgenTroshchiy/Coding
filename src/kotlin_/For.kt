@@ -1,12 +1,12 @@
-package kotlin
+package kotlin_
 
 private var array = intArrayOf(1, 2, 3, 4, 5, 10)
 
 fun main(args: Array<String>) {
 
 //    forRange()
+    forUntil()
 //    forDownTo()
-//    forUntil()
 
 //    forUntilArray()
 
@@ -14,11 +14,18 @@ fun main(args: Array<String>) {
 //    iterateOverArray()
 //    iterateWithIndex()
 
-    iterateMapGeneral()
+//    iterateMapGeneral()
 }
 
 private fun forRange() {
-    for (i in 0..10)
+    for (i in 0..10) // 0 - 10
+        print("$i ")
+
+    println()
+}
+
+private fun forUntil() {
+    for (i in 0 until 10) // 0 - 9
         print("$i ")
 
     println()
@@ -27,13 +34,6 @@ private fun forRange() {
 private fun forDownTo() {
     for (i in 4 downTo 1)
         print("$i ")
-
-    println()
-}
-
-private fun forUntil() {
-    for (i in 0 until 10) // i in [1, 10), 10 is excluded
-        print("$i")
 
     println()
 }
