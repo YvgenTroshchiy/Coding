@@ -1,4 +1,4 @@
-package codinginterview.string
+package coding_interview.string
 
 import java.util.*
 
@@ -6,8 +6,13 @@ import java.util.*
 val string = "getting good at coding needs a lot of practice"
 
 fun main(args: Array<String>) {
+    print(string)
+    println()
+    println()
+
     reverseString()
     println()
+
     revertEachWordInString(string)
 }
 
@@ -32,7 +37,7 @@ private fun revertEachWordInString(s: String) {
     val charArray = s.toCharArray()
 
     var start = 0 // Start word index
-    var end = 0 // End work index
+    var end: Int // End word index
 
     for ((index, value) in charArray.withIndex()) {
 
