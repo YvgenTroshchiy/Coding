@@ -3,10 +3,11 @@ package coding_interview.hackerrank.data_structures;
 
 import java.util.LinkedList;
 
+// Data Structures: Trees https://www.youtube.com/watch?v=oSWTXtMglKE
 
 // Hidden stub code will pass a root argument to the function below. Complete the function to solve the challenge.
 // Hint: you may want to write one or more helper functions.
-public class IsThisaBinarySearchTree {
+public class IsThisABinarySearchTree {
 
     private LinkedList<Integer> list = new LinkedList<>();
 
