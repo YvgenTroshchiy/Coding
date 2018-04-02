@@ -27,14 +27,14 @@ class Counts {
 }
 
 fun main(args: Array<String>) {
-    val a = "A"
+    val a = "key"
 
     val counts = Counts()
 
     counts.increment(a)
     counts.increment(a)
 
-    print("${counts.getValueAndReset(a)}\n\n")
+    print("count: ${counts.getValueAndReset(a)}\n\n")
 
-    counts.increment(a)
+    print(counts.getValue(a))
 }
