@@ -1,4 +1,4 @@
-package codinginterview.hackerrank.dataStructures;
+package hackerrank.data_structures;
 
 import java.util.ArrayList;
 import java.util.List;

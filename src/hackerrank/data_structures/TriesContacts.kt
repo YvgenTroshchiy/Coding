@@ -1,4 +1,5 @@
-package codinginterview.hackerrank.dataStructures
+package hackerrank.data_structures
+
 
 fun main(args: Array<String>) {
 
