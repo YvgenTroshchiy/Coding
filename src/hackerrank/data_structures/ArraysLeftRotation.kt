@@ -4,7 +4,7 @@ import java.util.*
 
 
 /*
-5 4
+5 4. Where 5 is number of digits and 4 is offset value
 
 1 2 3 4 5  // Sample Input
 5 1 2 3 4  // Sample Output
