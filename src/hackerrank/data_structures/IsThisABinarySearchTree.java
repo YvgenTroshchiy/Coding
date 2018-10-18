@@ -1,4 +1,4 @@
-package coding_interview.hackerrank.data_structures;
+package hackerrank.data_structures;
 
 
 import java.util.LinkedList;

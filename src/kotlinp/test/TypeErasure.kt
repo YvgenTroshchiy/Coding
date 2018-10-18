@@ -1,4 +1,4 @@
-package kotlin_.test
+package kotlinp.test
 
 open class A
 

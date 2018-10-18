@@ -1,4 +1,4 @@
-package kotlin
+package kotlinp
 
 fun main1() = println("Hello1")
 

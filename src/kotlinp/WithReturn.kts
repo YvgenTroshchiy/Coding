@@ -1,4 +1,4 @@
-package kotlin
+package kotlinp
 
 val i = 3
 
