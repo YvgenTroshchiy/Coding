@@ -29,7 +29,7 @@ fun main(args: Array<String>) {
     val scan = Scanner(System.`in`)
 
 //    val arr = getArrayFromScan(scan)
-    val arr = getDebugArray()
+    val arr = getDebugArray2()
 
     val result = hourglassSum(arr)
 
@@ -45,7 +45,7 @@ private fun getArrayFromScan(scan: Scanner): array2d {
     return arr
 }
 
-private fun getDebugArray(): array2d {
+private fun getDebugArray1(): array2d {
     val array: array2d = Array(array2dSize) { Array(array2dSize) { 0 } }
 
     array[0] = intArrayOf(1, 1, 1, 0, 0, 0).toTypedArray()
@@ -58,7 +58,20 @@ private fun getDebugArray(): array2d {
     return array
 }
 
-private fun hourglassSum(arr: array2d): Int {
+private fun getDebugArray2(): array2d {
+    val array: array2d = Array(array2dSize) { Array(array2dSize) { 0 } }
+
+    array[0] = intArrayOf(1, 1, 1, 0, 0, 0).toTypedArray()
+    array[1] = intArrayOf(0, 1, 0, 0, 0, 0).toTypedArray()
+    array[2] = intArrayOf(1, 1, 1, 0, 0, 0).toTypedArray()
+    array[3] = intArrayOf(0, 9, 2, -4, -4, 0).toTypedArray()
+    array[4] = intArrayOf(0, 0, 0, -2, 0, 0).toTypedArray()
+    array[5] = intArrayOf(0, 0, -1, -2, -4, 0).toTypedArray()
+
+    return array
+}
+
+private fun hourglassSum(arr: Array<Array<Int>>): Int {
     var result: Int = Int.MIN_VALUE
 
     var horizontalIndex = 0
@@ -67,7 +80,7 @@ private fun hourglassSum(arr: array2d): Int {
     while (arr.size - verticalIndex >= hourglassSize) {
 
         while (arr[0].size - horizontalIndex >= 3) {
-            println("v: $verticalIndex, h: $horizontalIndex")
+//            println("v: $verticalIndex, h: $horizontalIndex")
 
             var sum = 0
 
@@ -89,7 +102,7 @@ private fun hourglassSum(arr: array2d): Int {
         horizontalIndex = 0
         verticalIndex++
 
-        println()
+//        println()
     }
 
     return result
