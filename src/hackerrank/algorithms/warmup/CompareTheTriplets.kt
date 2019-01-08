@@ -1,4 +1,4 @@
-package hackerrank.algorithms
+package hackerrank.algorithms.warmup
 
 fun main(args: Array<String>) {
 //    val a = readLine()!!.trimEnd().split(" ").map { it.toInt() }.toTypedArray()
