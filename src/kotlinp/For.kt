@@ -1,20 +1,9 @@
 package kotlinp
 
-private var array = intArrayOf(1, 2, 3, 4, 5, 10)
+private var array = intArrayOf(1, 2, 3, 4, 5)
 
 fun main(args: Array<String>) {
-
-//    forRange()
-    forUntil()
-//    forDownTo()
-
-//    forUntilArray()
-
-//    iterateOverArrayIndices()
-//    iterateOverArray()
-//    iterateWithIndex()
-
-//    iterateMapGeneral()
+    forUntilArray()
 }
 
 private fun forRange() {
