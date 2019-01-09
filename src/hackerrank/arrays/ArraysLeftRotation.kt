@@ -1,4 +1,4 @@
-package hackerrank.data_structures
+package hackerrank.arrays
 
 import java.util.*
 
