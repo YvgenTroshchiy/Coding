@@ -15,12 +15,11 @@ const val invalidString2 = "aabbccddeefghi"
 //}
 
 fun main(args: Array<String>) {
-//    println(isValid(validString1))
+    println(isValid(validString1))
     println(isValid(TC7_validString))
-//    println(isValid(validString2))
-//    println()
-//    println(isValid(invalidString1))
-//    println(isValid(invalidString2))
+    println()
+    println(isValid(invalidString1))
+    println(isValid(invalidString2))
 }
 
 // Complete the isValid function below.
@@ -46,7 +45,7 @@ fun isValid(s: String): String {
         }
 
         if (firstValue != value) {
-            diff += Math.abs(firstValue - value)
+            diff++
         }
     }
 
