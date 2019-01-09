@@ -33,8 +33,7 @@ fun isValid(s: String): String {
     //Debug print. Show be commented to pass checks
 //    println(map)
 
-    var diff: Int = 0
-
+    var diff = 0
     var firstValue: Int? = null
 
     for ((_, value) in map) {
@@ -44,9 +43,7 @@ fun isValid(s: String): String {
             continue
         }
 
-        if (firstValue != value) {
-            diff++
-        }
+        if (firstValue != value) diff++
     }
 
     return if (diff <= 1) yes else no
