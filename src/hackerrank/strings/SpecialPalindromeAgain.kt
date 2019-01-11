@@ -17,26 +17,26 @@ const val TC16 = "aaaa" // 10
 //}
 
 fun main(args: Array<String>) {
-    println(substrCount(TC0.length, TC1))
+    println(substrCount(TC0.length, TC0))
 }
 
 // Complete the substrCount function below.
 private fun substrCount(n: Int, s: String): Long {
     var result = 0L
 
-    val a = s.toCharArray()
-
-    for (i in 0 until a.size) {
+    for (i in 0 until n) {
+//        println("")
 //        println("i: $i")
 
-        for (j in i + 1..a.size) {
+        for (j in i..n - 1) {
 //            print("$j, ")
-            val subSequence = s.substring(i, j)
-            val isPalindrome = isPalindrome(subSequence)
+
+            val isPalindrome = isPalindrome(i, j, s)
             if (isPalindrome) {
-                print("$subSequence, ")
                 result++
             }
+
+//            print(" ")
         }
 //        println()
     }
@@ -45,19 +45,24 @@ private fun substrCount(n: Int, s: String): Long {
     return result
 }
 
-private fun isPalindrome(charSequence: CharSequence): Boolean {
-    var string = charSequence
+private fun isPalindrome(first: Int, last: Int, s: String): Boolean {
+    var f = first
+    var l = last
+    val firstChar = s[first]
 
-    if (charSequence.length > 2 && charSequence.length % 2 > 0) {
-        // Odd
-        string = charSequence.removeRange(charSequence.length / 2, charSequence.length / 2 + 1)
-    } else {
-        // Even
+    if (f == l) {
+//        print("${s[f]}")
+        return true
     }
 
-    val first = string[0]
-    for (i in 1 until string.length) {
-        if (first != string[i]) return false
+//    for (i in f..l) {
+//        print("${s[i]}")
+//    }
+
+    while (l > f) {
+        if (s[l] != firstChar || s[f] != firstChar) return false
+        f++
+        l--
     }
 
     return true
