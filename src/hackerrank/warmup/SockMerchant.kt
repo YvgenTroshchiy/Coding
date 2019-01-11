@@ -14,8 +14,9 @@ private val TC10 = arrayOf(1, 1, 3, 1, 2, 1, 3, 3, 3, 3) // 4
 //}
 
 fun main(args: Array<String>) {
-    val result = sockMerchant(n, TC10)
-    println(result)
+    println(sockMerchant(n, ar1))
+    println(sockMerchant(n, ar2))
+    println(sockMerchant(n, TC10))
 }
 
 // Complete the sockMerchant function below.
