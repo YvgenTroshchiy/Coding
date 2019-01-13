@@ -3,17 +3,36 @@ package coding_interview.string
 import java.util.*
 
 
-val string = "getting good at coding needs a lot of practice"
+private const val string = "getting good at coding needs a lot of practice"
 
 fun main(args: Array<String>) {
     print(string)
     println()
     println()
 
-    reverseString()
+    reverseEachWordInString(string)
     println()
+    reverseString()
+}
 
-    revertEachWordInString(string)
+private fun reverseEachWordInString(s: String) {
+    val charArray = s.toCharArray()
+
+    var start = 0 // Start word index
+    var end: Int // End word index
+
+    for ((index, value) in charArray.withIndex()) {
+
+        if (value == ' ') {
+            end = index - 1
+
+            reverseWord(start, end, charArray)
+            start = index + 1
+        }
+    }
+    reverseWord(start, charArray.size - 1, charArray)
+
+    print(charArray)
 }
 
 private fun reverseString() {
@@ -33,28 +52,7 @@ private fun reverseString() {
     while (!stack.empty()) print("${stack.pop()} ")
 }
 
-private fun revertEachWordInString(s: String) {
-    val charArray = s.toCharArray()
-
-    var start = 0 // Start word index
-    var end: Int // End word index
-
-    for ((index, value) in charArray.withIndex()) {
-
-        if (value == ' ') {
-            end = index - 1
-
-            revertWord(start, end, charArray)
-            start = index + 1
-        }
-    }
-    revertWord(start, charArray.size - 1, charArray)
-
-    print(charArray)
-}
-
-
-private fun revertWord(s: Int, e: Int, a: CharArray) {
+private fun reverseWord(s: Int, e: Int, a: CharArray) {
     var start = s
     var end = e
 
