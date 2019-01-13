@@ -11,6 +11,7 @@ val a2 = arrayOf(4, 8, 9, 3)
 fun main(vararg args: String) {
     solution1()
     solution2()
+    solution2b()
 }
 
 private fun solution1() {
@@ -34,6 +35,14 @@ private fun solution2() {
     val set2 = a2.toHashSet()
 
     set1.removeAll(set2)
+
+    println(set1)
+}
+
+private fun solution2b() {
+    val set1 = a1.toHashSet()
+
+    set1.removeAll(a2)
 
     println(set1)
 }
