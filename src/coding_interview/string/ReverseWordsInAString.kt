@@ -2,8 +2,8 @@ package coding_interview.string
 
 import java.util.*
 
-
 private const val string = "getting good at coding needs a lot of practice"
+private const val string1 = "perfect makes practice"
 
 fun main(args: Array<String>) {
     print(string)
