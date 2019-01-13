@@ -4,6 +4,7 @@ import java.util.*
 
 private const val string = "getting good at coding needs a lot of practice"
 private const val string1 = "perfect makes practice"
+private val array = arrayOf('p', 'e', 'r', 'f', 'e', 'c', 't', ' ', 'm', 'a', 'k', 'e', 's', ' ', 'p', 'r', 'a', 'c', 't', 'i', 'c', 'e')
 
 fun main(args: Array<String>) {
     print(string)
