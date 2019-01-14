@@ -10,8 +10,11 @@ val a2 = arrayOf(4, 8, 9, 3)
 
 fun main(vararg args: String) {
     solution1()
+
     solution2()
     solution2b()
+
+    solution3()
 }
 
 private fun solution1() {
@@ -45,4 +48,10 @@ private fun solution2b() {
     set1.removeAll(a2)
 
     println(set1)
+}
+
+
+fun solution3() {
+    val result = a1.filter { !a2.contains(it) }
+    println(result)
 }
