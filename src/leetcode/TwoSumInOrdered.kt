@@ -13,9 +13,7 @@ private fun twoSum(nums: IntArray, target: Int) {
         val j = bSearch(index, nums.size - 1, target - value, nums)
         if (j != -1) {
             val result = intArrayOf(index, j)
-            for (i: Int in result) {
-                print("$i(${nums[i]}) ")
-            }
+            result.forEach { print("$it(${nums[it]}) ") }
             println()
         }
     }
