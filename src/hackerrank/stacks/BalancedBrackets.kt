@@ -15,6 +15,20 @@ val s5 = "((){}[])"
 // False
 val sf1 = "(((((((()"
 
+//fun main(args: Array<String>) {
+//    val string = LinkedList<String>()
+//
+//    val scan = Scanner(System.`in`)
+//    val t = scan.nextLine().trim().toInt()
+//    for (tItr in 1..t) {
+//        string.add(scan.nextLine())
+//    }
+//
+//    string.forEach {
+//        if (isBalanced(it)) println("YES") else println("NO")
+//    }
+//}
+
 fun main(args: Array<String>) {
     println(isBalanced(s5))
 }
