@@ -1,5 +1,7 @@
 package leetcode
 
+import java.util.*
+
 
 private val nums1 = intArrayOf(2, 7, 11, 15)
 private val t1 = 9 // [0,1]
@@ -8,8 +10,8 @@ private val nums2 = intArrayOf(3, 2, 4)
 private val t2 = 6 // [1,2]
 
 fun main(args: Array<String>) {
-    val result = twoSum(nums2, t2)
-    result.forEach { print("$it ") }
+    println(Arrays.toString(twoSum(nums1, t1)))
+    println(Arrays.toString(twoSum(nums2, t2)))
 }
 
 private fun twoSum(nums: IntArray, target: Int): IntArray {
