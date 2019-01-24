@@ -13,10 +13,7 @@ fun main() {
 
 private fun fib(n: Int): Int {
     count++
-    return when {
-        (n < 2) -> n
-        else -> fib(n - 1) + fib(n - 2)
-    }
+    return if ((n < 2)) n else fib(n - 1) + fib(n - 2)
 }
 
 private fun fibMemo(n: Int): Int {
