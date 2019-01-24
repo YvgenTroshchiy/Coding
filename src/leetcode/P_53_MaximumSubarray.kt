@@ -14,12 +14,12 @@ fun main(args: Array<String>) {
 }
 
 // Dynamic programming
-fun maxSubArray(A: IntArray): Int {
-    var maxEndingHere = A[0]
-    var maxSoFar = A[0]
+private fun maxSubArray(a: IntArray): Int {
+    var maxEndingHere = a[0]
+    var maxSoFar = a[0]
 
-    for (i in 1 until A.size) {
-        maxEndingHere = Math.max(maxEndingHere + A[i], A[i])
+    for (i in 1 until a.size) {
+        maxEndingHere = Math.max(maxEndingHere + a[i], a[i])
         maxSoFar = Math.max(maxEndingHere, maxSoFar)
     }
 
@@ -27,32 +27,30 @@ fun maxSubArray(A: IntArray): Int {
 }
 
 // Divide and Conquer
-fun maxSubArray2(A: IntArray): Int {
-    return maxSubArrayHelper(A, 0, A.size - 1)
-}
+private fun maxSubArray2(a: IntArray): Int = maxSubArrayHelper(a, 0, a.size - 1)
 
-private fun maxSubArrayHelper(A: IntArray, L: Int, R: Int): Int {
-    if (L > R) return Integer.MIN_VALUE
-    val M = (L + R) / 2
+private fun maxSubArrayHelper(a: IntArray, l: Int, r: Int): Int {
+    if (l > r) return Integer.MIN_VALUE
+    val m = (l + r) / 2 // middle
 
-    val leftAns = maxSubArrayHelper(A, L, M - 1)
-    val rightAns = maxSubArrayHelper(A, M + 1, R)
+    val leftAns = maxSubArrayHelper(a, l, m - 1)
+    val rightAns = maxSubArrayHelper(a, m + 1, r)
 
     var lMaxSum = 0
     var sum = 0
 
-    for (i in M - 1 downTo L) {
-        sum += A[i]
+    for (i in m - 1 downTo l) {
+        sum += a[i]
         lMaxSum = Math.max(sum, lMaxSum)
     }
 
     var rMaxSum = 0
     sum = 0
 
-    for (i in M + 1..R) {
-        sum += A[i]
+    for (i in m + 1..r) {
+        sum += a[i]
         rMaxSum = Math.max(sum, rMaxSum)
     }
 
-    return Math.max(lMaxSum + A[M] + rMaxSum, Math.max(leftAns, rightAns))
+    return Math.max(lMaxSum + a[m] + rMaxSum, Math.max(leftAns, rightAns))
 }
