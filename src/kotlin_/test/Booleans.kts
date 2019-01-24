@@ -1,4 +1,4 @@
-package kotlinp.test
+package kotlin_.test
 
 fun main2() {
     var b1 = false || false && false

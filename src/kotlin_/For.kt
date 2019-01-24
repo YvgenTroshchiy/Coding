@@ -1,4 +1,4 @@
-package kotlinp
+package kotlin_
 
 private var array = intArrayOf(1, 2, 3, 4, 5)
 

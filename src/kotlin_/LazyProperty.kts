@@ -1,4 +1,4 @@
-package kotlinp
+package kotlin_
 
 class LazyProperty(private val initializer: () -> Int) {
     private var value: Int? = null

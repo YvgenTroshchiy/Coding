@@ -1,4 +1,4 @@
-package kotlinp
+package kotlin_
 
 fun main(args: Array<String>) {
     val setInt = setOf<Int>()
