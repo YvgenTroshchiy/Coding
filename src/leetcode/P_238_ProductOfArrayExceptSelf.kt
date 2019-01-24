@@ -11,7 +11,7 @@ Output: [24, 12, 8, 6]
 Input:  [2, 2, 3, 4, 5]
 Output: [120, 120, 80, 60, 48]
 */
-fun main(args: Array<String>) {
+fun main() {
     val a1 = intArrayOf(1, 2, 3, 4)
     val a2 = intArrayOf(2, 2, 3, 4, 5)
 

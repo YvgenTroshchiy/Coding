@@ -10,7 +10,7 @@ private val s4 = "1 "
 private val f1 = "95a54e53"
 private val f2 = " 99e2.5 "
 
-fun main(args: Array<String>) {
+fun main() {
     println(isNumber(s0))
     println(isNumber(s1))
     println(isNumber(s2))

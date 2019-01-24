@@ -8,7 +8,7 @@ Explanation: [4,-1,2,1] has the largest sum = 6.
 
 private val nums = intArrayOf(-2, 1, -3, 4, -1, 2, 1, -5, 4)
 
-fun main(args: Array<String>) {
+fun main() {
     println(maxSubArray(nums))
     println(maxSubArray2(nums))
 }

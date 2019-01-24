@@ -14,7 +14,7 @@ private val nums3 = intArrayOf(2, 3, 4)
 private const val target3 = 6
 // Output: [0,2]
 
-fun main(args: Array<String>) {
+fun main() {
     println(Arrays.toString(twoSum(nums1, target1)))
     println(Arrays.toString(twoSum(nums2, target2)))
     println(Arrays.toString(twoSum(nums3, target3)))

@@ -6,7 +6,7 @@ private val nums = intArrayOf(2, 7, 11, 15)
 private const val t = 9
 // Output: [0,1]
 
-fun main(args: Array<String>) {
+fun main() {
     println(Arrays.toString(twoSum(nums, t)))
 }
 
