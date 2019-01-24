@@ -10,7 +10,7 @@ private val nums = intArrayOf(-2, 1, -3, 4, -1, 2, 1, -5, 4)
 
 fun main() {
     println(maxSubArray(nums))
-    println(maxSubArray2(nums))
+//    println(maxSubArray2(nums))
 }
 
 // Dynamic programming
