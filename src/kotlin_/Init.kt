@@ -1,6 +1,10 @@
 package kotlin_
 
-fun main(args: Array<String>) {
+
+fun main() {
+
+    val list1 = listOf("aa", "bb")
+
     val setInt = setOf<Int>()
     val setInt2 = mutableSetOf<Int>()
 
