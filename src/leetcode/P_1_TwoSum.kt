@@ -1,7 +1,5 @@
 package leetcode
 
-import java.util.*
-
 private val nums1 = intArrayOf(2, 7, 11, 15)
 private const val target1 = 9
 // Output: [0,1]
@@ -15,18 +13,20 @@ private const val target3 = 6
 // Output: [0,2]
 
 fun main() {
-    println(Arrays.toString(twoSum(nums1, target1)))
-    println(Arrays.toString(twoSum(nums2, target2)))
-    println(Arrays.toString(twoSum(nums3, target3)))
+    println(twoSum(nums1, target1)?.contentToString())
+    println(twoSum(nums2, target2)?.contentToString())
+    println(twoSum(nums3, target3)?.contentToString())
 }
 
-private fun twoSum(nums: IntArray, target: Int): IntArray {
+//The complement is the amount you must add to something to make it "whole".
+private fun twoSum(nums: IntArray, target: Int): IntArray? {
     // key is complement
     // value is nums index
     val map = mutableMapOf<Int, Int>()
 
     for ((index, value) in nums.withIndex()) {
         val complement = target - value
+
         if (map.containsKey(value)) {
             return intArrayOf(index, map[value] ?: -1)
         }
@@ -40,5 +40,5 @@ private fun twoSum(nums: IntArray, target: Int): IntArray {
         return intArrayOf(lastIndex, map[lastValue] ?: -1)
     }
 
-    return intArrayOf(-1, -1)
+    return null
 }
