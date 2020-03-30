@@ -28,7 +28,7 @@ private fun twoSum(nums: IntArray, target: Int): IntArray {
         val complement = target - value
 
         if (map.containsKey(value)) {
-            return intArrayOf(index, map[value] ?: -1)
+            return intArrayOf(map[value] ?: -1, index)
         } else {
             map[complement] = index
         }
