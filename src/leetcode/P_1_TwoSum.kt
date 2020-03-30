@@ -13,13 +13,13 @@ private const val target3 = 6
 // Output: [0,2]
 
 fun main() {
-    println(twoSum(nums1, target1)?.contentToString())
-    println(twoSum(nums2, target2)?.contentToString())
-    println(twoSum(nums3, target3)?.contentToString())
+    println(twoSum(nums1, target1))
+    println(twoSum(nums2, target2))
+    println(twoSum(nums3, target3))
 }
 
 //The complement is the amount you must add to something to make it "whole".
-private fun twoSum(nums: IntArray, target: Int): IntArray? {
+private fun twoSum(nums: IntArray, target: Int): IntArray {
     // key is complement
     // value is nums index
     val map = mutableMapOf<Int, Int>()
@@ -29,16 +29,10 @@ private fun twoSum(nums: IntArray, target: Int): IntArray? {
 
         if (map.containsKey(value)) {
             return intArrayOf(index, map[value] ?: -1)
+        } else {
+            map[complement] = index
         }
-        map[complement] = index
     }
 
-    val lastIndex = nums.size - 1
-    val lastValue = nums[lastIndex]
-
-    if (map.containsKey(lastValue)) {
-        return intArrayOf(lastIndex, map[lastValue] ?: -1)
-    }
-
-    return null
+    return intArrayOf(-1, -1)
 }
