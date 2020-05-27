@@ -12,6 +12,7 @@ private val nums3 = intArrayOf(2, 3, 4)
 private const val target3 = 6
 // Output: [0,2]
 
+// 1. Two Sum
 fun main() {
     println(twoSum(nums1, target1).contentToString())
     println(twoSum(nums2, target2).contentToString())

@@ -6,8 +6,9 @@ private val nums = intArrayOf(2, 7, 11, 15)
 private const val t = 9
 // Output: [0,1]
 
+// 2. Two Sum II – Input array is sorted
 fun main() {
-    println(Arrays.toString(twoSum(nums, t)))
+    println(twoSum(nums, t).contentToString())
 }
 
 private fun twoSum(numbers: IntArray, target: Int): IntArray {
