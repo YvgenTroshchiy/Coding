@@ -8,6 +8,10 @@ fun main() {
     val setInt = setOf<Int>()
     val setInt2 = mutableSetOf<Int>()
 
+    var intA0_0 = Array<Int>(10) {
+        it
+    }
+
     var intA0_1 = IntArray(3)
     var intA0_2 = arrayOfNulls<Int>(3)
     var intA0_3 = IntArray(3) { 1 }

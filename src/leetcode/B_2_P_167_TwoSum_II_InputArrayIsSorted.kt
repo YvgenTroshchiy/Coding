@@ -1,17 +1,15 @@
 package leetcode
 
-import java.util.*
-
 private val nums = intArrayOf(2, 7, 11, 15)
 private const val t = 9
 // Output: [0,1]
 
 // 2. Two Sum II – Input array is sorted
 fun main() {
-    println(twoSum(nums, t).contentToString())
+    println(twoSumTwoPointers(nums, t).contentToString())
 }
 
-private fun twoSum(numbers: IntArray, target: Int): IntArray {
+private fun twoSumTwoPointers(numbers: IntArray, target: Int): IntArray {
     var l = 0
     var r = numbers.size - 1
 
