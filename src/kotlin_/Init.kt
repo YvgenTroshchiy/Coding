@@ -3,6 +3,9 @@ package kotlin_
 
 fun main() {
 
+    val l = ArrayList<String>(15)
+    l.add("dd")
+
     val list1 = listOf("aa", "bb")
 
     val setInt = setOf<Int>()
