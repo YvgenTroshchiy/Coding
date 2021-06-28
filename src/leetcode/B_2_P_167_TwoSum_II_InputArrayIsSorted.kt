@@ -24,3 +24,5 @@ private fun twoSumTwoPointers(numbers: IntArray, target: Int): IntArray {
 
     return intArrayOf(-1, -1)
 }
+
+//TODO: Add binary search solution
