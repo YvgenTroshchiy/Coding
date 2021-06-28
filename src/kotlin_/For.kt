@@ -28,7 +28,8 @@ private fun forDownTo() {
 }
 
 private fun forUntilArray() {
-    for (i in 0 until array.size)
+//    for (i in 0 until array.size)
+    for (i in array.indices)
         println("$i: ${array[i]}")
 
     println()

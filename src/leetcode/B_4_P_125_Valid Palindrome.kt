@@ -15,7 +15,8 @@ Output: false
 Explanation: "raceacar" is not a palindrome.
 */
 
-const val example1 = "A man, a plan, a canal: Panama"
+private const val example1 = "A man, a plan, a canal: Panama"
+
 fun main() {
     println(isPalindrome(example1))
 }
