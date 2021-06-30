@@ -9,8 +9,24 @@ Explanation: [4,-1,2,1] has the largest sum = 6.
 private val nums = intArrayOf(-2, 1, -3, 4, -1, 2, 1, -5, 4)
 
 fun main() {
-    println(maxSubArray(nums))
+    println(maxSubArrayBruteForce(nums))
+//    println(maxSubArray(nums))
 //    println(maxSubArray2(nums))
+}
+
+fun maxSubArrayBruteForce(nums: IntArray): Int {
+    var m = 0
+
+    for (i in 0 until nums.size) {
+        var ms = 0
+
+        for (j in i until nums.size) {
+            ms += nums[j]
+            if (ms > m) m = ms
+        }
+    }
+
+    return m
 }
 
 // Dynamic programming
