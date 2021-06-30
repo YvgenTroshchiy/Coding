@@ -15,7 +15,7 @@ fun main() {
 }
 
 fun maxSubArrayBruteForce(nums: IntArray): Int {
-    var m = 0
+    var m = Int.MIN_VALUE
 
     for (i in 0 until nums.size) {
         var ms = 0
